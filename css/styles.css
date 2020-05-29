@@ -55,6 +55,8 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .menu__logo {
