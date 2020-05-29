@@ -43,6 +43,7 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* Studio Header Styles */
