@@ -725,7 +725,7 @@ button {
 }
 
 .offer__sub {
-  margin: 20px 0 20px 24px;
+  padding: 20px 0 20px 24px;
 
   border-right-width: 1px;
   border-right-style: solid;
@@ -738,4 +738,10 @@ button {
   border-left-color: #eeeeee;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.offer__item:hover,
+.offer__item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
