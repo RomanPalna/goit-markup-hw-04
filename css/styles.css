@@ -275,6 +275,30 @@ button {
   margin-right: 30px;
 }
 
+.principles__item::before {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.principles__item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+.principles__item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+.principles__item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+.principles__item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .principles__icon {
   display: block;
   width: 270px;
