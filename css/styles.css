@@ -132,6 +132,8 @@ button {
 .menu-address__link {
   color: var(--title-text-color);
 
+  display: flex;
+  align-items: center;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -474,19 +476,19 @@ button {
 }
 
 .clients__icon {
-  margin-top: 20px;
   fill: currentColor;
 }
 
 .clients__link {
-  display: inline-block;
+  display: inline-flex;
   min-width: 170px;
   height: 90px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 /* Footer */
 
@@ -555,13 +557,14 @@ button {
 }
 
 .join__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  padding-top: 12px;
-  padding-left: 12px;
 }
 
 .join__link:hover,
@@ -632,6 +635,8 @@ button {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   padding: 18px 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Портфолио */
