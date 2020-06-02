@@ -98,9 +98,6 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .menu__item:not(:last-child) {
@@ -108,7 +105,23 @@ button {
 }
 
 .menu__link {
+  position: relative;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
+}
+
+.menu__link--active::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--link-primary-color);
+  border-radius: 2px;
 }
 
 .menu__link:hover,
@@ -335,7 +348,16 @@ button {
   display: flex;
 }
 
+.job__list {
+  position: relative;
+}
+
 .job__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -733,6 +755,35 @@ button {
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+.offer__thumb {
+  position: relative;
+}
+
+.offer__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  padding: 63px 24px;
+  margin: 0;
+
+  color: var(--link-seconary-color);
+
+  opacity: 0;
+}
+
+.offer__text:hover,
+.offer__text:focus {
+  opacity: 1;
 }
 
 .offer__title {
